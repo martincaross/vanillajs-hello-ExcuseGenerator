@@ -1,5 +1,55 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+  background: white;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-excuse {
+  background-color: #8e44ad;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-excuse:hover {
+  background-color: #6c3483;
+}
+
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+.dark-mode .alert-warning {
+  background-color: #444;
+  color: white;
+}
+
+.dark-mode .btn-excuse {
+  background-color: #5d2a75;
+}
+
+.dark-mode .btn-excuse:hover {
+  background-color: #421b56;
+}
+
+.dark-mode .mode-toggle {
+  background-color: #333;
+  color: yellow;
 }
